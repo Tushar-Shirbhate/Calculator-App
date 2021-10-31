@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|right|center_horizontal|center_vertical"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="238dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="207dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Number "
+        android:inputType="number"
+        android:shadowColor="#1D120101"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#9CFFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/mul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="254dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="44dp"
+        android:gravity="clip_horizontal|center"
+        android:hint="Answer"
+        android:shadowColor="#1D120101"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#9CFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:shadowColor="#1D120101"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="#5D08F4"
+        app:layout_constraintStart_toStartOf="@+id/mul"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="#5D08F4"
+        app:layout_constraintBottom_toBottomOf="@+id/add"
+        app:layout_constraintEnd_toEndOf="@+id/div" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginBottom="314dp"
+        android:text="*"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="#5D08F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:text="/"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="#5D08F4"
+        app:layout_constraintBottom_toBottomOf="@+id/mul"
+        app:layout_constraintStart_toStartOf="@+id/mul" />
+
+    <Button
+        android:id="@+id/canc"
+        android:layout_width="224dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="45dp"
+        android:text="Clear"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#5D08F4"
+        app:layout_constraintEnd_toEndOf="@+id/div"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/mul"
+        app:layout_constraintTop_toTopOf="@+id/mul" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
